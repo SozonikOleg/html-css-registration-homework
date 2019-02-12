@@ -5,16 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/reset.css">
 </head>
 <body>
     <main class="main">
         <fieldset class="fieldset">
                 <nav class="nav">
-                   <label title="sign in" class="nav--sign-in">sign in</label>
-                   <label title="sign up" class="nav--sign-un">sign up</label>
+                   <input type="radio" id="tab-1" name="tabs" checked>
+                   <label title="sign in" for="tab-1" class="nav--sign-in">sign in</label>
+                   <input type="radio" id="tab-2" name="tabs">
+                   <label title="sign up" for="tab-2" class="nav--sign-un">sign up</label>
                 </nav>
-                <form class="form">
+                <form id="form-1" class="form">  
+                    <input type="email" placeholder="Email" class="form-email">
+                    <input type="password" placeholder="Password" class="form-password">
+                    <p class="form-checkbox">
+                        <input type="checkbox" checked name="html5"/>Keep me logged in 
+                    </p>
+                    <button type="submit" formmethod="get" formaction="index.html" class="form-button">login</button>
+                    <p class="form-forgot-password"><a href="#" class="form-forgot-password--link">Forgot password?</a></p>
+                </form>
+                <form id="form-2" class="form del" >
                     <input type="tel" placeholder="Mobile Phone" class="form-tel">    
                     <input type="email" placeholder="Email ID" class="form-email">
                     <input type="password" placeholder="Password" class="form-password">
