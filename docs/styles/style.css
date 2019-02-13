@@ -1,0 +1,176 @@
+body{
+    background: url(../img/Layer.png) no-repeat;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    display:flex;
+    flex-direction: column;
+    margin: 70px 40px 0px 40px;
+    color: white;
+}
+
+.wrapper-form{
+    width: 430px;
+    padding-top: 45px;
+    background-color:  rgba(17, 24, 28, 0.7);
+    border: none;
+}
+
+.wrapper-form__sign-in{
+    margin: 44px 0px 0px 44px;
+    padding-bottom: 8px;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.wrapper-form__sign-up {
+    margin: 44px 0px 0px 37px;
+    padding-bottom: 8px;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+.form__tel,
+.form__email,
+.form__password{
+    margin-top: 40px;
+    background: none;
+    color: white;
+    border: 0px solid white;
+    border-bottom: 1px solid white;
+    padding-bottom: 4px;
+    font-size: 17px;
+}
+
+input::placeholder {
+    color:White;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline-offset: 0px !important;
+    outline: none !important;
+}
+
+button:focus {outline:0;}
+
+
+/* start style checkbox */
+
+input[type=checkbox] + label {
+    display: block;
+    margin: 0.2em;
+    cursor: pointer;
+    padding: 0.2em;
+  }
+  
+  input[type=checkbox] {
+    display: none;
+  }
+  
+  input[type=checkbox] + label:before {
+    content: "\2714";
+    padding: 1px 0px 0px 2px;
+    border: 0.1em solid rgb(204, 198, 198);
+    border-radius: 0.2em;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.2em;
+    vertical-align: bottom;
+    color: transparent;
+    transition: .2s;
+  }
+  
+  input[type=checkbox] + label:active:before {
+    transform: scale(0);
+  }
+  
+  input[type=checkbox]:checked + label:before {
+    background-color: skyblue;
+    padding: 1px 0px 0px 2px;
+    border: 0.1em solid skyblue;
+    color: #fff;
+  }
+  
+  input[type=checkbox]:disabled + label:before {
+    transform: scale(1);
+    border-color: #aaa;
+  }
+  
+  input[type=checkbox]:checked:disabled + label:before {
+    transform: scale(1);
+    background-color: #bfb;
+    border-color: #bfb;
+  }
+
+.form__checkbox {
+    margin-top: 49px;
+}
+
+/* the end style checkbox */
+
+
+.form__button {
+    margin: 40px auto 40px;
+    width: 196px;
+    height: 39px;
+    border-radius: 20px;
+    background-color: #f57f17;
+    border: none;
+    font-size: 20px;
+    color: #ffffff;
+    font-family: "Proxima Nova";
+    text-transform: uppercase;
+}
+
+.button:active {
+    border: none;
+}
+
+.form__forgot-password--link{
+    text-decoration: none;
+    color: white;
+}
+
+.form__forgot-password{
+    margin: 16px auto 30px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+/* start style checkbox nav*/
+
+.form {
+    display: none;
+}
+
+#tab-1:checked ~ #form-1,
+#tab-2:checked ~ #form-2{
+    display: flex;
+}
+
+input[name="tabs"]:checked + label{
+    border-bottom: 3px solid #ff8000;
+}
+
+input[name="tabs"] {
+    display: none;
+}
+
+
+/* the end style checkbox nav*/
