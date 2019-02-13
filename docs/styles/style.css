@@ -1,9 +1,9 @@
-body{
-    background: url(../img/Layer.png) no-repeat;
-    -moz-background-size: 100%; /* Firefox 3.6+ */
-    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
-    -o-background-size: 100%; /* Opera 9.6+ */
-    background-size: 100%; /* Современные браузеры */
+html { 
+    background: url(../img/Layer.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .main {
@@ -142,6 +142,8 @@ input[type=checkbox] + label {
 }
 
 .form__forgot-password--link{
+    display: block;
+    text-align: center;
     text-decoration: none;
     color: white;
 }
@@ -174,3 +176,29 @@ input[name="tabs"] {
 
 
 /* the end style checkbox nav*/
+
+/* start mobile style */
+
+@media (max-width: 443px) {
+    .wrapper-form{
+        width:95%;
+    }
+
+    .form{
+        margin: 71px 5px 0px 5px;
+    }
+
+    .wrapper-form__sign-in{
+        margin: 0px 0px 0px 5px;
+    }
+
+    .wrapper-form__sign-up{
+        margin: 0px 0px 0px 5px;
+    }
+
+    .form__checkbox-discription{
+        font-size: 13px;
+    }
+}
+    
+/* the end mobile style */
