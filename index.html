@@ -10,14 +10,14 @@
 </head>
 <body>
     <main class="main">
-        <fieldset class="fieldset">
+        <section class="wrapper-form">
                    <input type="radio" id="tab-1" name="tabs" checked>
                    <label title="sign in" for="tab-1" class="nav--sign-in">sign in</label>
                    <input type="radio" id="tab-2" name="tabs">
                    <label title="sign up" for="tab-2" class="nav--sign-un">sign up</label>
                 <form id="form-1" class="form">  
-                    <input type="email" placeholder="Email" class="form-email">
-                    <input type="password" placeholder="Password" class="form-password">
+                    <input type="email" placeholder="Email" name="email" class="form-email">
+                    <input type="password" placeholder="Password" name="password" class="form-password">
                     <p class="form-checkbox">
                         <input type="checkbox" id="check-in" name="check-in" value="">
                         <label for="check-in">Keep me logged in </label>
@@ -26,16 +26,16 @@
                     <p class="form-forgot-password"><a href="#" class="form-forgot-password--link">Forgot password?</a></p>
                 </form>
                 <form id="form-2" class="form" >
-                    <input type="tel" placeholder="Mobile Phone" class="form-tel">    
-                    <input type="email" placeholder="Email ID" class="form-email">
-                    <input type="password" placeholder="Password" class="form-password">
+                    <input type="tel" placeholder="Mobile Phone" name="tel" class="form-tel">    
+                    <input type="email" placeholder="Email ID" name="email" class="form-email">
+                    <input type="password" placeholder="Password" name="password" class="form-password">
                     <p class="form-checkbox">
                         <input type="checkbox" id="check-un" name="check-un" value="">
                         <label for="check-un">I agree to terms and conditions </label>
                     </p>
                     <button type="submit" formmethod="get" formaction="index.html" class="form-button">Register</button>
                 </form>
-        </fieldset> 
+        </section> 
     </main>
 </body>
 </html>

@@ -20,24 +20,29 @@ body{
     color: white;
 }
 
-.fieldset{
+.wrapper-form{
     width: 430px;
+    padding-top: 45px;
     background-color:  rgba(17, 24, 28, 0.7);
     border: none;
 }
 
-.nav{
-    color: white;
-    margin-top: 44px;
-}
-
-.nav--sign-in,
-.nav--sign-un{
+.nav--sign-in{
     margin: 44px 0px 0px 44px;
     padding-bottom: 8px;
     font-size: 22px;
     text-transform: uppercase;
+    color: white;
 }
+
+.nav--sign-un {
+    margin: 44px 0px 0px 37px;
+    padding-bottom: 8px;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: white;
+}
+
 
 .form-tel,
 .form-email,
@@ -62,9 +67,62 @@ input:focus, textarea:focus, select:focus {
 
 button:focus {outline:0;}
 
+
+/* start style checkbox */
+
+input[type=checkbox] + label {
+    display: block;
+    margin: 0.2em;
+    cursor: pointer;
+    padding: 0.2em;
+  }
+  
+  input[type=checkbox] {
+    display: none;
+  }
+  
+  input[type=checkbox] + label:before {
+    content: "\2714";
+    padding: 1px 0px 0px 2px;
+    border: 0.1em solid rgb(204, 198, 198);
+    border-radius: 0.2em;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.2em;
+    vertical-align: bottom;
+    color: transparent;
+    transition: .2s;
+  }
+  
+  input[type=checkbox] + label:active:before {
+    transform: scale(0);
+  }
+  
+  input[type=checkbox]:checked + label:before {
+    background-color: skyblue;
+    padding: 1px 0px 0px 2px;
+    border: 0.1em solid skyblue;
+    color: #fff;
+  }
+  
+  input[type=checkbox]:disabled + label:before {
+    transform: scale(1);
+    border-color: #aaa;
+  }
+  
+  input[type=checkbox]:checked:disabled + label:before {
+    transform: scale(1);
+    background-color: #bfb;
+    border-color: #bfb;
+  }
+
 .form-checkbox {
     margin-top: 49px;
 }
+
+/* the end style checkbox */
+
 
 .form-button {
     margin: 40px auto 40px;
@@ -89,20 +147,20 @@ button:focus {outline:0;}
 }
 
 .form-forgot-password{
-    margin: 9px auto 30px;
+    margin: 16px auto 30px;
     font-size: 20px;
     font-weight: 400;
 }
 
 
-/* style checkbox */
+/* style checkbox nav*/
 
 .form {
-    display: flex;
+    display: none;
 }
 
-#tab-1:checked ~ #form-1{
-    background: #ffffff;
+#tab-1:checked ~ #form-1,
+#tab-2:checked ~ #form-2{
     display: flex;
 }
 
@@ -114,6 +172,3 @@ input[name="tabs"] {
     display: none;
 }
 
-.del {
-    display: none;
-}
