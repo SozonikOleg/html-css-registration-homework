@@ -27,7 +27,7 @@ body{
     border: none;
 }
 
-.nav--sign-in{
+.wrapper-form__sign-in{
     margin: 44px 0px 0px 44px;
     padding-bottom: 8px;
     font-size: 22px;
@@ -35,7 +35,7 @@ body{
     color: white;
 }
 
-.nav--sign-un {
+.wrapper-form__sign-un {
     margin: 44px 0px 0px 37px;
     padding-bottom: 8px;
     font-size: 22px;
@@ -44,9 +44,9 @@ body{
 }
 
 
-.form-tel,
-.form-email,
-.form-password{
+.form__tel,
+.form__email,
+.form__password{
     margin-top: 40px;
     background: none;
     color: white;
@@ -117,14 +117,14 @@ input[type=checkbox] + label {
     border-color: #bfb;
   }
 
-.form-checkbox {
+.form__checkbox {
     margin-top: 49px;
 }
 
 /* the end style checkbox */
 
 
-.form-button {
+.form__button {
     margin: 40px auto 40px;
     width: 196px;
     height: 39px;
@@ -141,19 +141,19 @@ input[type=checkbox] + label {
     border: none;
 }
 
-.form-forgot-password--link{
+.form__forgot-password--link{
     text-decoration: none;
     color: white;
 }
 
-.form-forgot-password{
+.form__forgot-password{
     margin: 16px auto 30px;
     font-size: 20px;
     font-weight: 400;
 }
 
 
-/* style checkbox nav*/
+/* start style checkbox nav*/
 
 .form {
     display: none;
@@ -172,3 +172,5 @@ input[name="tabs"] {
     display: none;
 }
 
+
+/* the end style checkbox nav*/
