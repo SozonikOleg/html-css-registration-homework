@@ -1,1 +1,0 @@
-# html-css-registration-homework
