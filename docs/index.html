@@ -26,7 +26,8 @@
                     <p class="form__forgot-password"><a href="#" class="form__forgot-password--link">Forgot password?</a></p>
                 </form>
                 <form id="form-2" class="form" >
-                    <input type="tel" placeholder="Mobile Phone" name="tel" class="form__tel">    
+                    <input type="tel" placeholder="Mobile Phone" name="tel" class="form__tel"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    required>    
                     <input type="email" placeholder="Email ID" name="email" class="form__email">
                     <input type="password" placeholder="Password" name="password" class="form__password">
                     <p class="form__checkbox">
