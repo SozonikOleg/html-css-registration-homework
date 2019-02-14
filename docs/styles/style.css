@@ -13,21 +13,21 @@ html {
     align-items: center;
 }
 
-.form{
+.form {
     display:flex;
     flex-direction: column;
     margin: 70px 40px 0px 40px;
     color: white;
 }
 
-.wrapper-form{
+.wrapper-form {
     width: 430px;
     padding-top: 45px;
     background-color:  rgba(17, 24, 28, 0.7);
     border: none;
 }
 
-.wrapper-form__sign-in{
+.wrapper-form__sign-in {
     margin: 44px 0px 0px 44px;
     padding-bottom: 8px;
     font-size: 22px;
@@ -46,7 +46,7 @@ html {
 
 .form__tel,
 .form__email,
-.form__password{
+.form__password {
     margin-top: 40px;
     background: none;
     color: white;
@@ -141,14 +141,14 @@ input[type=checkbox] + label {
     border: none;
 }
 
-.form__forgot-password--link{
+.form__forgot-password--link {
     display: block;
     text-align: center;
     text-decoration: none;
     color: white;
 }
 
-.form__forgot-password{
+.form__forgot-password {
     margin: 16px auto 30px;
     font-size: 20px;
     font-weight: 400;
@@ -162,11 +162,11 @@ input[type=checkbox] + label {
 }
 
 #tab-1:checked ~ #form-1,
-#tab-2:checked ~ #form-2{
+#tab-2:checked ~ #form-2 {
     display: flex;
 }
 
-input[name="tabs"]:checked + label{
+input[name="tabs"]:checked + label {
     border-bottom: 3px solid #ff8000;
 }
 
@@ -184,19 +184,19 @@ input[name="tabs"] {
         width:95%;
     }
 
-    .form{
+    .form {
         margin: 71px 5px 0px 5px;
     }
 
-    .wrapper-form__sign-in{
+    .wrapper-form__sign-in {
         margin: 0px 0px 0px 5px;
     }
 
-    .wrapper-form__sign-up{
+    .wrapper-form__sign-up {
         margin: 0px 0px 0px 5px;
     }
 
-    .form__checkbox-discription{
+    .form__checkbox-discription {
         font-size: 13px;
     }
 }
